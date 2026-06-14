@@ -1,20 +1,17 @@
 .gameplay-section {
-  background: #503618;
-
   @include media(desktop) {
   }
 }
 
 .gameplay-section-wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 50px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 
   @include media(desktop) {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 100px;
     max-width: 1440px;
   }
 }
@@ -25,21 +22,68 @@
 }
 
 .gameplay-title {
-  color: #fff;
-
   @include media(desktop) {
   }
 }
 
-.gameplay-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28571;
-  color: #fff;
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
   @include media(desktop) {
-    font-size: 20px;
-    line-height: 1.2;
+    gap: 0;
+    max-width: 1036px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.gameplay-list-item {
+  box-shadow:
+    0 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 19px;
+
+  @include media(desktop) {
+    padding: 23px;
+    max-width: 518px;
+
+    &:nth-child(odd) {
+      margin-right: auto;
+    }
+
+    &:nth-child(even) {
+      margin-left: auto;
+    }
+  }
+}
+
+.gameplay-item-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #010101;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    line-height: 1.3125;
+  }
+}
+
+.gameplay-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #010101;
+
+  @include media(desktop) {
+    font-size: 24px;
   }
 }

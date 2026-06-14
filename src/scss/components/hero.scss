@@ -10,7 +10,7 @@
   margin: 0 auto;
 
   @include media(desktop) {
-    padding-top: 168px;
+    padding-top: 184px;
     padding-bottom: 164px;
     max-width: 1440px;
   }
@@ -35,12 +35,12 @@
 
 .hero-text-wrapper {
   @include media(desktop) {
-    max-width: 842px;
+    max-width: 892px;
   }
 }
 
 .hero-title {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.33333;
@@ -60,49 +60,11 @@
   font-size: 20px;
   line-height: 1.5;
   color: #010101;
-  margin-bottom: 16px;
 
   @include media(desktop) {
     font-size: 32px;
     line-height: 1.3125;
-    margin-bottom: 24px;
-  }
-}
-
-.hero-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28571;
-  color: #010101;
-  margin-bottom: 20px;
-
-  @include media(desktop) {
-    font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 40px;
-  }
-}
-
-.hero-btn {
-  background: #503618;
-  border-radius: 24px;
-  padding: 16px 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  color: #fff;
-  width: 100%;
-
-  @include media(desktop) {
-    font-size: 22px;
-    line-height: 1.45455;
-    max-width: 337px;
+    max-width: 842px;
   }
 }
 
